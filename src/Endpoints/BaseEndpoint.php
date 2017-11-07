@@ -34,7 +34,28 @@ abstract class BaseEndpoint
      */
     protected function get($endpoint_extension = '', $options = [])
     {
+        if(isset($options["query"]) && is_array($options["query"])) {
+            $options["query"] = $this->format_query($options["query"]);
+        }
+
         return $this->api->get($this->endpoint.$endpoint_extension, $options);
+    }
+
+    /**
+     * @param array  $query
+     * @return array
+     */
+    protected function format_query($query = [])
+    {
+        foreach ($query as $key => $value){
+            if(!is_bool($value)){
+                continue;
+            }
+
+            $query[$key] = ($value === true) ? 'true' : 'false';
+        }
+
+        return $query;
     }
 
     /**

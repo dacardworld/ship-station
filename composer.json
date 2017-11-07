@@ -1,8 +1,8 @@
 {
-    "name": "dissolve/ship-station",
-    "description": "A php wrapper for ship station's rest api",
+    "name": "dacardworld/ship-station",
+    "description": "A php wrapper for ShipStation's rest api",
     "type": "library",
-    "homepage": "https://github.com/dissolve/ship-station/",
+    "homepage": "https://github.com/dacardworld/ship-station/",
     "keywords": ["ship", "shipping", "ship-station", "shipstation", "api", "wrapper"],
     "license": "MIT",
     "authors": [
@@ -17,17 +17,24 @@
             "email": "ben@thatmustbe.me",
             "homepage": "https://ben.thatmustbe.me",
             "role": "maintainer"
+        },
+        {
+            "name": "Eric Cholis",
+            "email": "echolis@dacardworld.com",
+            "homepage": "http://www.dacardworld.com",
+            "role": "maintainer"
         }
     ],
     "autoload": {
         "psr-4": {
-            "MichaelB\\ShipStation\\": "src/"
+            "dacardworld\\ShipStation\\": "src/"
         }
     },
     "require": {
         "guzzlehttp/guzzle": "~6.0"
     },
     "replace":{
-        "michaelb/ship-station": "*"
+        "michaelb/ship-station": "*",
+        "dissolve/ship-station": "*"
     }
 }

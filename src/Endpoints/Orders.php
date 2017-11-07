@@ -47,7 +47,7 @@ class Orders extends BaseEndpoint
     public function addTag($order_id, $tag_id)
     {
         return $this->post('addTag', [
-            'form_params' => [
+            'json' => [
                 'orderId' => $order_id,
                 'tagId' => $tag_id
             ]
@@ -57,7 +57,7 @@ class Orders extends BaseEndpoint
     public function assignUser($order_ids = [], $user_id = '')
     {
         return $this->post('assignUser', [
-            'form_params' => [
+            'json' => [
                 'orderIds' => $order_ids,
                 'userId' => $user_id
             ]
@@ -65,16 +65,16 @@ class Orders extends BaseEndpoint
     }
 
     /**
-     * @param array $form_params
+     * @param array $json
      *
      * @return \GuzzleHttp\Psr7\Response
      * @internal param Order $order
      * @internal param bool $test
      *
      */
-    public function createLabelForOrder($form_params = [])
+    public function createLabelForOrder($json = [])
     {
-        return $this->post('createlabelfororder', compact('form_params'));
+        return $this->post('createlabelfororder', compact('json'));
     }
 
     /**
@@ -87,7 +87,7 @@ class Orders extends BaseEndpoint
     public function createOrder(Order $order)
     {
         return $this->post('createorder', [
-            'form_params' => $order->toArray()
+            'json' => $order->toArray()
         ]);
     }
 
@@ -100,7 +100,7 @@ class Orders extends BaseEndpoint
     public function createOrders($orders = [])
     {
         return $this->post('createorders', [
-            'form_params' => $orders->toArray()
+            'json' => $orders->toArray()
         ]);
     }
 
@@ -115,7 +115,7 @@ class Orders extends BaseEndpoint
     public function holdUntil($order_id = '', $hold_until_date = '')
     {
         return $this->post('holduntil', [
-            'form_params' => [
+            'json' => [
                 'orderid' => $order_id,
                 'holdUntilDate' => $hold_until_date
             ]
@@ -161,7 +161,7 @@ class Orders extends BaseEndpoint
     public function markAsShipped($order_id, $carrier_code = '', $ship_date = '', $tracking_number = '', $notify_customer = false, $notify_sales_channel = false)
     {
         return $this->post('markasshipped', [
-            'form_params' => [
+            'json' => [
                 'orderId' => $order_id,
                 'carrierCode' => $carrier_code,
                 'shipDate' => $ship_date,
@@ -181,7 +181,7 @@ class Orders extends BaseEndpoint
     public function removeTag($order_id, $tag_id)
     {
         return $this->post('removeTag', [
-            'form_params' => [
+            'json' => [
                 'orderId' => $order_id,
                 'tagId' => $tag_id
             ]
@@ -196,7 +196,7 @@ class Orders extends BaseEndpoint
     public function restoreFromHold($order_id)
     {
         return $this->post('restorefromhold', [
-            'form_params' => [
+            'json' => [
                 'orderId' => $order_id
             ]
         ]);
@@ -210,7 +210,7 @@ class Orders extends BaseEndpoint
     public function unassignUser($order_ids = [])
     {
         return $this->post('unassignuser', [
-            'form_params' => [
+            'json' => [
                 'orderIds' => $order_ids
             ]
         ]);

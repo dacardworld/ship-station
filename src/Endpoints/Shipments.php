@@ -25,7 +25,7 @@ class Shipments extends BaseEndpoint
      */
     public function createLabel($label = [])
     {
-        return $this->post('createlabel', ['form_params' => $label]);
+        return $this->post('createlabel', ['json' => $label]);
     }
 
     /**
@@ -35,7 +35,7 @@ class Shipments extends BaseEndpoint
      */
     public function getRates($query = [])
     {
-        return $this->post('getrates', ['form_params' => $query]);
+        return $this->post('getrates', ['json' => $query]);
     }
 
     /**
@@ -46,6 +46,6 @@ class Shipments extends BaseEndpoint
      */
     public function voidLabel($shipmentId = '')
     {
-        return $this->post('voidlabel', ['form_params' => compact('shipmentId')]);
+        return $this->post('voidlabel', ['json' => compact('shipmentId')]);
     }
 }

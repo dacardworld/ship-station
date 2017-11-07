@@ -28,7 +28,7 @@ class Stores extends BaseEndpoint
      */
     public function update(Store $store)
     {
-        return $this->put($store->storeId, ['form_params' => $store->toArray()]);
+        return $this->put($store->storeId, ['json' => $store->toArray()]);
     }
 
     /**
@@ -87,7 +87,7 @@ class Stores extends BaseEndpoint
      */
     public function deactivateStore($storeId = '')
     {
-        return $this->post('deactivate', ['form_params' => compact('storeId')]);
+        return $this->post('deactivate', ['json' => compact('storeId')]);
     }
 
     /**
@@ -97,6 +97,6 @@ class Stores extends BaseEndpoint
      */
     public function reactivateStore($storeId = '')
     {
-        return $this->post('reactivate', ['form_params' => compact('storeId')]);
+        return $this->post('reactivate', ['json' => compact('storeId')]);
     }
 }

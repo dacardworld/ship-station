@@ -38,13 +38,13 @@ abstract class BaseEndpoint
     }
 
     /**
-     * @param string $endpoint_extenstion
+     * @param string $endpoint_extension
      * @param array  $options
      * @return \GuzzleHttp\Psr7\Response
      */
-    protected function post($endpoint_extenstion = '', $options = [])
+    protected function post($endpoint_extension = '', $options = [])
     {
-        return $this->api->post($this->endpoint.$endpoint_extenstion, $options);
+        return $this->api->post($this->endpoint.$endpoint_extension, $options);
     }
 
     /**

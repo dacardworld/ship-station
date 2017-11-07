@@ -1,11 +1,11 @@
 <?php
 
-namespace MichaelB\ShipStation\Models;
+namespace dacardworld\ShipStation\Models;
 
 use \JsonSerializable;
 use \ArrayAccess;
 use Traversable;
-use MichaelB\ShipStation\Contracts\Arrayable;
+use dacardworld\ShipStation\Contracts\Arrayable;
 
 abstract class BaseModel implements ArrayAccess, Arrayable
 {

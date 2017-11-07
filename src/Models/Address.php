@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MichaelB\ShipStation\Models;
+namespace dacardworld\ShipStation\Models;
 
 
 class Address extends BaseModel

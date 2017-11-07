@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MichaelB\ShipStation\Endpoints;
+namespace dacardworld\ShipStation\Endpoints;
 
 
 class Shipments extends BaseEndpoint

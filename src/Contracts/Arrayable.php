@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MichaelB\ShipStation\Contracts;
+namespace dacardworld\ShipStation\Contracts;
 
 
 interface Arrayable

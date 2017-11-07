@@ -1,9 +1,9 @@
 <?php
 
-namespace MichaelB\ShipStation\Endpoints;
+namespace dacardworld\ShipStation\Endpoints;
 
 
-use MichaelB\ShipStation\Models\Store;
+use dacardworld\ShipStation\Models\Store;
 
 class Stores extends BaseEndpoint
 {

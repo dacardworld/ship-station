@@ -1,9 +1,9 @@
 <?php
 
-namespace MichaelB\ShipStation\Endpoints;
+namespace dacardworld\ShipStation\Endpoints;
 
 
-use MichaelB\ShipStation\ShipStationApi;
+use dacardworld\ShipStation\ShipStationApi;
 
 abstract class BaseEndpoint
 {

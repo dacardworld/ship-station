@@ -1,20 +1,20 @@
 <?php
 
 
-namespace MichaelB\ShipStation;
+namespace dacardworld\ShipStation;
 
 use GuzzleHttp\Client;
-use MichaelB\ShipStation\Endpoints\Carriers;
-use MichaelB\ShipStation\Endpoints\Customers;
-use MichaelB\ShipStation\Endpoints\Orders;
-use MichaelB\ShipStation\Endpoints\Products;
-use MichaelB\ShipStation\Endpoints\Fulfillments;
-use MichaelB\ShipStation\Endpoints\Shipments;
-use MichaelB\ShipStation\Endpoints\Stores;
-use MichaelB\ShipStation\Endpoints\Users;
-use MichaelB\ShipStation\Endpoints\Warehouses;
-use MichaelB\ShipStation\Endpoints\Webhooks;
-use MichaelB\ShipStation\Models\Warehouse;
+use dacardworld\ShipStation\Endpoints\Carriers;
+use dacardworld\ShipStation\Endpoints\Customers;
+use dacardworld\ShipStation\Endpoints\Orders;
+use dacardworld\ShipStation\Endpoints\Products;
+use dacardworld\ShipStation\Endpoints\Fulfillments;
+use dacardworld\ShipStation\Endpoints\Shipments;
+use dacardworld\ShipStation\Endpoints\Stores;
+use dacardworld\ShipStation\Endpoints\Users;
+use dacardworld\ShipStation\Endpoints\Warehouses;
+use dacardworld\ShipStation\Endpoints\Webhooks;
+use dacardworld\ShipStation\Models\Warehouse;
 
 class ShipStationApi Extends Client
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace MichaelB\ShipStation\Models;
+namespace dacardworld\ShipStation\Models;
 
 
 class ProductTag extends BaseModel

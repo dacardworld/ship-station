@@ -1,15 +1,15 @@
 <?php
 
 
-namespace MichaelB\ShipStation\Endpoints;
+namespace dacardworld\ShipStation\Endpoints;
 
 
-use MichaelB\ShipStation\Models\AdvancedOptions;
-use MichaelB\ShipStation\Models\Dimensions;
-use MichaelB\ShipStation\Models\InsuranceOptions;
-use MichaelB\ShipStation\Models\InternationalOptions;
-use MichaelB\ShipStation\Models\Order;
-use MichaelB\ShipStation\Models\Weight;
+use dacardworld\ShipStation\Models\AdvancedOptions;
+use dacardworld\ShipStation\Models\Dimensions;
+use dacardworld\ShipStation\Models\InsuranceOptions;
+use dacardworld\ShipStation\Models\InternationalOptions;
+use dacardworld\ShipStation\Models\Order;
+use dacardworld\ShipStation\Models\Weight;
 
 class Orders extends BaseEndpoint
 {
